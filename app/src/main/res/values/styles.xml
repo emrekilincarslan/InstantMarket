@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorTertiary">@color/black</item>
+        <item name="actionMenuTextColor">@color/black</item>
+        <item name="android:actionMenuTextColor">@color/black</item>
+    </style>
+
+    <style name="AppTheme.Toolbar">
+        <item name="android:background">@color/toolbar_color</item>
+        <item name="subtitleTextColor">@color/black</item>
+        <item name="titleTextColor">@color/black</item>
+        <item name="subtitleTextAppearance">@style/SubTitleSmall</item>
+    </style>
+
+    <style name="SubTitleSmall" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="EditQuoteTheme" parent="AppTheme">
+        <item name="actionMenuTextColor">@color/symbol_menu_item</item>
+        <item name="android:actionMenuTextColor">@color/symbol_menu_item</item>
+    </style>
+
+    <style name="ToolbarTextAppearanceTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ToolbarTextAppearanceSubtitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="ChartTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+    <style name="ChartDialog" parent="@style/ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:colorAccent">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:color">@color/black</item>
+        <item name="colorControlNormal">@color/black</item>
+    </style>
+</resources>

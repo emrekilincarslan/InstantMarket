@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.5; user-scalable=1"/>
+            
+            <style>
+                body {
+                    font-family: Calibri, Helvetica, arial, sans-serif;
+                    font-size: 10px;
+                    line-height: 1.6;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    background-color: white;
+                    padding: 30px; }
+            
+            body > *:first-child {
+                margin-top: 0 !important; }
+            body > *:last-child {
+                margin-bottom: 0 !important; }
+            
+            a {
+                color: #4183C4; }
+            a.absent {
+                color: #cc0000; }
+            a.anchor {
+                display: block;
+                padding-left: 30px;
+                margin-left: -30px;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0; }
+            
+            h1, h2, h3, h4, h5, h6 {
+                margin: 12px 0 10px;
+                padding: 0;
+                font-weight: bold;
+                -webkit-font-smoothing: antialiased;
+                cursor: text;
+                position: relative;
+                vertical-align:middle;
+                text-align:center; }
+            
+            h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+                text-decoration: none; }
+            
+            h1 tt, h1 code {
+                font-size: inherit; }
+            
+            h2 tt, h2 code {
+                font-size: inherit; }
+            
+            h3 tt, h3 code {
+                font-size: inherit; }
+            
+            h4 tt, h4 code {
+                font-size: inherit; }
+            
+            h5 tt, h5 code {
+                font-size: inherit; }
+            
+            h6 tt, h6 code {
+                font-size: inherit; }
+            
+            h1 {
+                font-size: 12px;
+                color: black; }
+            
+            h2 {
+                font-size: 24px;
+                border-bottom: 1px solid #cccccc;
+                color: black; }
+            
+            h3 {
+                font-size: 18px; }
+            
+            h4 {
+                font-size: 16px; }
+            
+            h5 {
+                font-size: 14px; }
+            
+            h6 {
+                color: #777777;
+                font-size: 14px; }
+            
+            p, blockquote, ul, ol, dl, li, table, pre {
+                margin: 15px 0; }
+            
+            hr {
+                background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+                border: 0 none;
+                color: #cccccc;
+                height: 4px;
+                padding: 0;
+            }
+            
+            body > h2:first-child {
+                margin-top: 0;
+                padding-top: 0; }
+            body > h1:first-child {
+                margin-top: 0;
+                padding-top: 0; }
+            body > h1:first-child + h2 {
+                margin-top: 0;
+                padding-top: 0; }
+            body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+                margin-top: 0;
+                padding-top: 0; }
+            
+            a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+                margin-top: 0;
+                padding-top: 0; }
+            
+            h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+                margin-top: 0; }
+            
+            li p.first {
+                display: inline-block; }
+            li {
+                margin: 0; }
+            ul, ol {
+                padding-left: 30px; }
+            
+            ul :first-child, ol :first-child {
+                margin-top: 0; }
+            
+            dl {
+                padding: 0; }
+            dl dt {
+                font-size: 14px;
+                font-weight: bold;
+                font-style: italic;
+                padding: 0;
+                margin: 15px 0 5px; }
+            dl dt:first-child {
+                padding: 0; }
+            dl dt > :first-child {
+                margin-top: 0; }
+            dl dt > :last-child {
+                margin-bottom: 0; }
+            dl dd {
+                margin: 0 0 15px;
+                padding: 0 15px; }
+            dl dd > :first-child {
+                margin-top: 0; }
+            dl dd > :last-child {
+                margin-bottom: 0; }
+            
+            blockquote {
+                border-left: 4px solid #dddddd;
+                padding: 0 15px;
+                color: #888888; }
+            blockquote > :first-child {
+                margin-top: 0; }
+            blockquote > :last-child {
+                margin-bottom: 0; }
+            
+            table {
+                padding: 0;border-collapse: collapse; }
+            table tr {
+                border-top: 1px solid #cccccc;
+                background-color: white;
+                margin: 0;
+                padding: 0; }
+            table tr:nth-child(2n) {
+                background-color: #f8f8f8; }
+            table tr th {
+                font-weight: bold;
+                border: 1px solid #cccccc;
+                text-align: left;
+                margin: 0;
+                padding: 6px 13px; }
+            table tr td {
+                border: 1px solid #cccccc;
+                text-align: left;
+                margin: 0;
+                padding: 6px 13px; }
+            table tr th :first-child, table tr td :first-child {
+                margin-top: 0; }
+            table tr th :last-child, table tr td :last-child {
+                margin-bottom: 0; }
+            
+            img {
+                max-width: 100%; }
+            
+            span.frame {
+                display: block;
+                overflow: hidden; }
+            span.frame > span {
+                border: 1px solid #dddddd;
+                display: block;
+                float: left;
+                overflow: hidden;
+                margin: 13px 0 0;
+                padding: 7px;
+                width: auto; }
+            span.frame span img {
+                display: block;
+                float: left; }
+            span.frame span span {
+                clear: both;
+                color: #333333;
+                display: block;
+                padding: 5px 0 0; }
+            span.align-center {
+                display: block;
+                overflow: hidden;
+                clear: both; }
+            span.align-center > span {
+                display: block;
+                overflow: hidden;
+                margin: 13px auto 0;
+                text-align: center; }
+            span.align-center span img {
+                margin: 0 auto;
+                text-align: center; }
+            span.align-right {
+                display: block;
+                overflow: hidden;
+                clear: both; }
+            span.align-right > span {
+                display: block;
+                overflow: hidden;
+                margin: 13px 0 0;
+                text-align: right; }
+            span.align-right span img {
+                margin: 0;
+                text-align: right; }
+            span.float-left {
+                display: block;
+                margin-right: 13px;
+                overflow: hidden;
+                float: left; }
+            span.float-left span {
+                margin: 13px 0 0; }
+            span.float-right {
+                display: block;
+                margin-left: 13px;
+                overflow: hidden;
+                float: right; }
+            span.float-right > span {
+                display: block;
+                overflow: hidden;
+                margin: 13px auto 0;
+                text-align: right; }
+            
+            code, tt {
+                margin: 0 2px;
+                padding: 0 5px;
+                white-space: nowrap;
+                border: 1px solid #eaeaea;
+                background-color: #f8f8f8;
+                border-radius: 3px; }
+            
+            pre code {
+                margin: 0;
+                padding: 0;
+                white-space: pre;
+                border: none;
+                background: transparent; }
+            
+            .highlight pre {
+                background-color: #f8f8f8;
+                border: 1px solid #cccccc;
+                font-size: 13px;
+                line-height: 19px;
+                overflow: auto;
+                padding: 6px 10px;
+                border-radius: 3px; }
+            
+            pre {
+                background-color: #f8f8f8;
+                border: 1px solid #cccccc;
+                font-size: 13px;
+                line-height: 19px;
+                overflow: auto;
+                padding: 6px 10px;
+                border-radius: 3px; }
+            pre code, pre tt {
+                background-color: transparent;
+                border: none; }
+            
+            @media screen and (min-width: 914px) {
+                body {
+                    width: 854px;
+                    margin:0 auto;
+                }
+            }
+            @media print {
+                table, pre {
+                    page-break-inside: avoid;
+                }
+            }
+            </style>
+            <title>LICENSED APPLICATION END USER LICENSE AGREEMENT</title>
+            <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['$$$','$$$']]}});</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <h1>LICENSED APPLICATION END USER LICENSE AGREEMENT</h1>
+        
+        <p>The Products transacted through the Service are licensed, not sold, to You for use only under the terms of this license, unless a Product is accompanied by a separate license agreement, in which case the terms of that separate license agreement will govern, subject to Your prior acceptance of that separate license agreement. The licensor (“Application Provider”) reserves all rights not expressly granted to You. The Android Product that is subject to this license is referred to in this license as the “Licensed Application.”</p>
+        
+        <ol type="a">
+            <li><p>Scope of License: This license granted to You for the Licensed Application by Application Provider is limited to a non-transferable license to use the Licensed Application on any Android Product that You own or control and as permitted by the Usage Rules set forth in the App Store Terms and Conditions (the “Usage Rules”). This license does not allow You to use the Licensed Application on any Android Product that You do not own or control, and You may not distribute or make the Licensed Application available over a network where it could be used by multiple devices at the same time. You may not rent, lease, lend, sell, redistribute or sublicense the Licensed Application. You may not copy (except as expressly permitted by this license and the Usage Rules), decompile, reverse engineer, disassemble, attempt to derive the source code of, modify, or create derivative works of the Licensed Application, any updates, or any part thereof (except as and only to the extent any foregoing restriction is prohibited by applicable law or to the extent as may be permitted by the licensing terms governing use of any open sourced components included with the Licensed Application). Any attempt to do so is a violation of the rights of the Application Provider and its licensors. If You breach this restriction, You may be subject to prosecution and damages. The terms of the license will govern any upgrades provided by Application Provider that replace and/or supplement the original Product, unless such upgrade is accompanied by a separate license in which case the terms of that license will govern.</p></li>
+            
+            <li><p>Consent to Use and Disclosure of Data: You agree that Application Provider may collect and use technical data and related information, including but not limited to technical information about Your device, system and application software, and peripherals, that is gathered periodically to facilitate the provision of software updates, product support and other services to You (if any) related to the Licensed Application. Application Provider may use this information, as long as it is in a form that does not personally identify You (except as otherwise provided in this paragraph b.), to improve its products or to provide services or technologies to You. You also agree that Application Provider may disclose technical and related information gathered through the Licensed Application’s Products or Services, including, but not limited to information about Your device, system and application software, peripherals, global positioning location and other information or data. You represent by acceptance of these terms that You are the owner and/or authorized user of the device onto which the Licensed Application and its Products or Services will be downloaded or installed, and as the owner and/or authorized user, You expressly consent to the monitoring and gathering of such data and information, as well as the disclosure of such data and information to third parties (for example, Your employer or the company with which You have an independent contractor relationship) who contract with Application Provider.</p></li>
+            
+            <li><p>Maintenance and Support. Application Provider is solely responsible for providing any support or maintenance for the Licensed Application. Licensor and Licensee agree that Google shall not be responsible for providing any maintenance or support services in relation to the Licensed Application.</p></li>
+            
+            <li><p>Termination. The license is effective until terminated by You or Application Provider. Your rights under this license will terminate automatically without notice from the Application Provider if You fail to comply with any term(s) of this license. Upon termination of the license, You shall cease all use of the Licensed Application, and destroy all copies, full or partial, of the Licensed Application.</p></li>
+            
+            <li><p>Services; Third Party Materials. The Licensed Application may enable access to Application Provider’s and third party services and web sites (collectively and individually, "Services"). Use of the Services may require Internet access and that You accept additional terms of service.</p>
+                
+                <p>You understand that by using any of the Services, You may encounter content that may be deemed offensive, indecent, or objectionable, which content may or may not be identified as having explicit language, and that the results of any search or entering of a particular URL may automatically and unintentionally generate links or references to objectionable material. Nevertheless, You agree to use the Services at Your sole risk and that the Application Provider shall not have any liability to You for content that may be found to be offensive, indecent, or objectionable.</p>
+                
+                <p>Certain Services may display, include or make available content, data, information, applications or materials from third parties (“Third Party Materials”) or provide links to certain third party web sites. By using the Services, You acknowledge and agree that the Application Provider is not responsible for examining or evaluating the content, accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect of such Third Party Materials or web sites. The Application Provider does not warrant or endorse and does not assume and will not have any liability or responsibility to You or any other person for any third-party Services, Third Party Materials or web sites, or for any other materials, products, or services of third parties. Third Party Materials and links to other web sites are provided solely as a convenience to You. Financial information displayed by any Services is for general informational purposes only and is not intended to be relied upon as investment advice. Before executing any securities transaction based upon information obtained through the Services, You should consult with a financial professional. Location data provided by any Services is for basic navigational purposes only and is not intended to be relied upon in situations where precise location information is needed or where erroneous, inaccurate or incomplete location data may lead to death, personal injury, property or environmental damage. Neither the Application Provider, nor any of its content providers, guarantees the availability, accuracy, completeness, reliability, or timeliness of stock information or location data displayed by any Services.</p>
+                
+                <p>You agree that any Services contain proprietary content, information and material that is protected by applicable intellectual property and other laws, including but not limited to copyright, and that You will not use such proprietary content, information or materials in any way whatsoever except for permitted use of the Services. No portion of the Services may be reproduced in any form or by any means. You agree not to modify, rent, lease, loan, sell, distribute, or create derivative works based on the Services, in any manner, and You shall not exploit the Services in any unauthorized way whatsoever, including but not limited to, by trespass or burdening network capacity. You further agree not to use the Services in any manner to harass, abuse, stalk, threaten, defame or otherwise infringe or violate the rights of any other party, and that the Application Provider is not in any way responsible for any such use by You, nor for any harassing, threatening, defamatory, offensive or illegal messages or transmissions that You may receive as a result of using any of the Services.</p>
+                
+                <p>In addition, third party Services and Third Party Materials that may be accessed from, displayed on or linked to from the Android Product are not available in all languages or in all countries. The Application Provider makes no representation that such Services and Materials are appropriate or available for use in any particular location. To the extent You choose to access such Services or Materials, You do so at Your own initiative and are responsible for compliance with any applicable laws, including but not limited to applicable local laws. The Application Provider, and its licensors, reserve the right to change, suspend, remove, or disable access to any Services at any time without notice. In no event will the Application Provider be liable for the removal of or disabling of access to any such Services. The Application Provider may also impose limits on the use of or access to certain Services, in any case and without notice or liability.</p></li>
+            
+            <li><p>Regulators and Sources. Customer shall comply with the rules and regulations, including but not limited to any reporting requirements, which are applicable to market data providers, third party sources of information within the Service, and governmental agencies having jurisdiction. You agree to execute deliver to Licensor all agreements, amendments thereto, and any other information required by each applicable source.</p></li>
+            
+            <li><p>NO WARRANTY: YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE LICENSED APPLICATION IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED APPLICATION AND ANY SERVICES PERFORMED OR PROVIDED BY THE LICENSED APPLICATION ("SERVICES") ARE PROVIDED "AS IS" AND “AS AVAILABLE”, WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND APPLICATION PROVIDER HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE LICENSED APPLICATION AND ANY SERVICES, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS. APPLICATION PROVIDER DOES NOT WARRANT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE LICENSED APPLICATION, THAT THE FUNCTIONS CONTAINED IN, OR SERVICES PERFORMED OR PROVIDED BY, THE LICENSED APPLICATION WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE LICENSED APPLICATION OR SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE LICENSED APPLICATION OR SERVICES WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY APPLICATION PROVIDER OR ITS AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. SHOULD THE LICENSED APPLICATION OR SERVICES PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER, SO THE ABOVE EXCLUSION AND LIMITATIONS MAY NOT APPLY TO YOU.</p></li>
+            
+            <li><p>Limitation of Liability. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL APPLICATION PROVIDER BE LIABLE FOR PERSONAL INJURY, OR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION OR ANY OTHER COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE LICENSED APPLICATION, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF APPLICATION PROVIDER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS LIMITATION MAY NOT APPLY TO YOU. In the event the Licensed Application fails to conform with any applicable warranty, then You may notify Google, and Google may refund the purchase price (if any) paid by Licensee to Google via the Google Store. In no event shall Application Provider’s total liability to you for all damages (other than as may be required by applicable law in cases involving personal injury) exceed the amount of fifty dollars ($50.00). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose. APPLICATION PROVIDER IS NOT RESPONSIBLE FOR ANY INNAPPROPRIATE OR ILLEGAL USE OR DISCLOSURE OF ITS PRODUCTS OR SERVICES, INCLUDING ANY INFORMATION, ABOUT YOUR DEVICE, SYSTEM, APPLICATION, SOFTWARE, PERIPHERALS, GLOBAL POSITIONING LOCATION AND OTHER INFORMATION OR DATA, AND YOU EXPRESSLY WAIVE, RELEASE AND AGREE TO HOLD HARMLESS APPLICATION PROVIDER FROM ANY USE OR DISCLOSURE THAT IS IN VIOLATION OF YOUR PRIVACY OR OTHER RIGHTS.</p></li>
+            
+            <li><p>Intellectual Property. You acknowledge and agree that all ownership and Intellectual Property Rights (including, without limitation, any patents, trademarks, or copyrights) to the Licensed Application or Services are and shall remain the sole and exclusive property of Licensor or its suppliers. “Intellectual Property Rights” means any and all (by whatever name or term known or designated) tangible and intangible and now known or hereafter existing (a) rights associated with works of authorship throughout the universe, including but not limited to copyrights, moral rights, and mask-works, (b) trademark and trade name rights and similar rights, (c) trade secret rights, (d) patents, designs, algorithms and other industrial property rights, (e) all other intellectual and industrial property rights (of every kind and nature throughout the universe and however designated) (including logos, “rental” rights and rights to remuneration), whether arising by operation of law, agreement, license, or otherwise, and (f) all registrations, initial applications, renewals, extensions, continuations, divisions or reissues hereof now or hereafter in force (including any rights in any of the foregoing).</p>
+                
+                <p>Licensor will indemnify You as to any rightful claim that Your use of Licensed Application or Services infringe a United States patent or copyright, provided that You give Licensor prompt written notice of the claim, allows Licensor to have sole control of the defense or settlement (if any) thereof, and cooperates fully with Licensor’ defense or settlement. In the defense or settlement of a claim, or if use of the Licensed Application or Services is enjoined, Licensor may, at its expense and option: (a) procure for You the right to continue using the Licensed Application or Services; (b) replace or modify the Licensed Application or Services so they become non-infringing. Licensor will not be liable to You for any claim that is based upon: (i) use of the Licensed Application or Services in modified form or in a manner for which they were not designed; (ii) use of the Licensed Application or Services in combination with goods or services not provided by Licensor; (iii) use of the Licensed Application or Services in practicing any process; or (iv) furnishing to You of any information, service or applications assistance. In no event shall Licensor’ total liability to You under or as a result of compliance with the provisions of this Section exceed the aggregate sum paid to Licensor by You for the allegedly infringing Licensed Application or Services. The foregoing states the entire liability of Licensor with respect to infringement of Intellectual Property by any Licensed Application or Services provided by Licensor. You shall hold Licensor harmless against any expense, judgment, or loss for infringement of any patents, copyrights or trademarks which results from Licensor’ compliance with Your designs, specifications, or instructions and shall indemnify Licensor for all costs, including attorneys' fees, of defending against any such claims.</p></li>
+            
+            <li><p>Indemnification. You shall indemnify, defend, and hold harmless Licensor, and its respective representatives, successors and permitted assigns from and against any and all claims made or threatened by any third party and all related losses, expenses, damages, costs and liabilities, including reasonable attorneys' fees and expenses incurred in investigation or defense, regardless of the theory of liability or the nature of the legal proceedings ("Damages"), to the extent such Damages arise out of or relate to the following (a) any act or omission by You, or its representatives in the performance of Your obligations contained herein; or (b) any material breach in a representation, covenant or obligation of You contained herein. Licensor, upon receipt of notice of a claim that could result in You indemnifying Licensor pursuant to this Section, shall give prompt written notice to You of the existence of such claim and shall permit You, if it so requests, either to conduct the defense of such claim or to participate with Licensor in the defense thereof and in any settlement negotiations relating thereto; provided however, that You shall not be required to pay any settlement amount that it has not approved in advance.</p></li>
+            
+            <li><p>Legal Compliance. You may not use or otherwise export or re-export the Licensed Application except as authorized by United States law and the laws of the jurisdiction in which the Licensed Application was obtained. In particular, but without limitation, the Licensed Application may not be exported or re-exported (a) into any U.S. embargoed countries or (b) to anyone on the U.S. Treasury Department's list of Specially Designated Nationals or the U.S. Department of Commerce Denied Person’s List or Entity List. By using the Licensed Application, you represent and warrant that you are not located in any such country or on any such list. You also agree that you will not use these products for any purposes prohibited by United States law, including, without limitation, the development, design, manufacture or production of nuclear, missiles, or chemical or biological weapons.</p>
+                
+                <p>The Licensed Application and related documentation are "Commercial Items", as that term is defined at 48 C.F.R. §2.101, consisting of "Commercial Computer Software" and "Commercial Computer Software Documentation", as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as applicable. Consistent with 48 C.F.R. §12.212 or 48 C.F.R. §227.7202-1 through 227.7202-4, as applicable, the Commercial Computer Software and Commercial Computer Software Documentation are being licensed to U.S. Government end users (a) only as Commercial Items and (b) with only those rights as are granted to all other end users pursuant to the terms and conditions herein. Unpublished-rights reserved under the copyright laws of the United States.</p></li>
+            
+            <li><p>Governing Law and Venue.  The laws of the State of Nebraska, excluding its conflicts of law rules, govern this license and your use of the Licensed Application. Your use of the Licensed Application may also be subject to other local, state, national, or international laws.  You hereby agree that any action brought by You against Apple, Licensor, or its third party suppliers shall have jurisdiction and venue only in the United States.  Customer agrees that regardless of any statute or law to the contrary, any claim or cause of action arising out of or related to this Agreement must be filed within one (1) year after such claim or cause of action arose or be forever barred.</p></li>
+            
+            <li><p>Notices. Any and all written notices or communications shall be made to the respective parties at their addresses as disclosed during the order process, or updated and provided to one another from time to time, and may be provided via standard mail, priority courier, facsimile, or e-mail. Either party may request the other to provide written proof of delivery or confirmation of notice receipt. If no address was provided during the order process, then You may notify Licensor by sending a written communication to the following address: DTN, LLC, ATTN: LEGAL COMPLIANCE / Android products, 9110 West Dodge Road, Omaha, NE 68114. You may also contact Licensor by telephone at 800-485-4000.</p></li>
+            
+            <li><p>Third Party Beneficiary. You agree and acknowledge that Google, and Google’s subsidiaries, are third party beneficiaries of this Licensed Application End User License Agreement (“EULA”), and that, upon Your acceptance of the terms and conditions of the EULA, Google will have the right (and will be deemed to have accepted the right) to enforce the EULA against You as a third party beneficiary thereof.</p></li>
+        </ol>
+        
+    </body>
+</html>

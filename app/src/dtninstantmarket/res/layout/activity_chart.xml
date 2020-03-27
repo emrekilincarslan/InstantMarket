@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <com.fondova.finance.charts.ChartHeaderView
+        android:id="@+id/chart_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/root_chart_port"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/quote_detail_background"
+        tools:context=".ui.chart.detail.ChartActivity">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.fondova.finance.quotes.InstantMarketQuoteItemView
+                android:id="@+id/quote_data_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/symbol_label_background" />
+
+            <com.fondova.finance.charts.ChartIntervalSelectionView
+                android:id="@+id/chart_interval_selection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.fondova.finance.charts.ChartView
+                android:id="@+id/chart_view"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_height="300dp" />
+
+            <com.fondova.finance.news.NewsListView
+                android:id="@+id/news_view"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

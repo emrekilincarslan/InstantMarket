@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="use_stock_settings">true</bool>
+    <bool name="use_multiple_workspaces">true</bool>
+    <bool name="use_google_drive">false</bool>
+    <bool name="showNewsTab">false</bool>
+    <color name="chart_line">@color/stock_light_blue</color>
+    <bool name="show_symbol_data_in_chart_title">false</bool>
+    <color name="chart_header_color">@color/stock_dark_blue</color>
+</resources>

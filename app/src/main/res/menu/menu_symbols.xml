@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add"
+        android:showAsAction="always"
+        android:title="@string/add">
+        <menu>
+            <item
+                android:id="@+id/add_symbol"
+                android:title="@string/symbol" />
+            <item
+                android:id="@+id/add_label"
+                android:title="@string/label" />
+            <item
+                android:id="@+id/add_expression"
+                android:title="@string/expression" />
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_refresh"
+        android:showAsAction="always"
+        android:title="@string/refresh" />
+    <item
+        android:id="@+id/edit_quotes"
+        android:icon="@drawable/ic_edit"
+        android:showAsAction="always"
+        android:title="@string/edit" />
+</menu>

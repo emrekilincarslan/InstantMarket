@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "431159075836",
+    "firebase_url": "https://stock-instant-market.firebaseio.com",
+    "project_id": "stock-instant-market",
+    "storage_bucket": "stock-instant-market.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431159075836:android:8f789c346bf9693b",
+        "android_client_info": {
+          "package_name": "com.stock.instantmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431159075836-t9btp2ihduk7e4ie3e57578d76a15cmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqFnYehmI55v0A7lgs3K8yYBydJR_24ho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

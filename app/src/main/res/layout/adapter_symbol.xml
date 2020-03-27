@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fondova.finance.util.swipeLayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                         xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                         xmlns:tools="http://schemas.android.com/tools"
+                                                         android:id="@+id/srl_row"
+                                                         android:layout_width="match_parent"
+                                                         android:layout_height="wrap_content"
+                                                         android:minHeight="@dimen/quote_row_height"
+                                                         app:dragEdge="right"
+                                                         app:mode="same_level"
+    >
+
+    <!-- Your secondary layout here -->
+    <include layout="@layout/include_quote_delete_reveal" />
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_black"
+        android:paddingBottom="@dimen/padding_pre_medium"
+        android:paddingEnd="@dimen/padding_medium"
+        android:paddingStart="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_pre_medium">
+
+
+        <TextView
+            android:id="@+id/tv_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/white"
+            android:layout_toStartOf="@+id/tv_current_price"
+            android:textSize="16sp"
+            tools:text="\@CN17 371'4"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_symbol_name"
+            style="@style/auto_size_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_symbol"
+            android:layout_marginTop="@dimen/margin_nano"
+            android:alpha="0.7"
+            android:maxLines="10"
+            android:textColor="@color/white"
+            tools:text="CORN July 2017"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_row_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_symbol_name"
+            android:layout_marginTop="@dimen/margin_nano"
+            android:layout_toStartOf="@+id/tv_change"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_open_price"
+                style="@style/symbol_value"
+                android:layout_weight="1"
+                tools:text="O: 367'0"/>
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_bid"
+                style="@style/symbol_value"
+                android:layout_weight="1"
+                tools:text="B: 371'4"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_settle"
+                style="@style/symbol_value"
+                android:layout_weight="1"
+                tools:text="S: 367'6"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_row_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_row_one"
+            android:layout_marginTop="@dimen/margin_nano"
+            android:layout_toStartOf="@+id/tv_change"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_high"
+                style="@style/symbol_value"
+                android:layout_weight="1"
+                tools:text="H: 372'2"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_ask"
+                style="@style/symbol_value"
+                android:layout_weight="1"
+                tools:text="A: 371'4"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_date_settled"
+                style="@style/symbol_value"
+                android:layout_weight="1"
+                tools:text="D: 05/16"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_row_two"
+            android:layout_marginTop="@dimen/margin_nano"
+            android:layout_toStartOf="@+id/tv_change"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_low"
+                style="@style/symbol_value"
+                android:layout_weight="1"
+                tools:text="L: 366'2"/>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_volume"
+                style="@style/symbol_value"
+                android:layout_weight="1"
+                tools:text="V: 100187"/>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_current_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/tv_change"
+            android:gravity="end"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            tools:text="4'4 (1.22%)"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_change"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tv_symbol_name"
+            android:background="@drawable/current_price_green_background"
+            android:gravity="center"
+            android:minHeight="@dimen/quote_row_min_height"
+            android:minWidth="@dimen/quote_row_min_width"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:autoSizeMaxTextSize="14sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            tools:text="4'4 (1.22%)"/>
+
+    </RelativeLayout>
+</com.fondova.finance.util.swipeLayout.SwipeRevealLayout>

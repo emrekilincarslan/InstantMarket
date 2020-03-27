@@ -1,0 +1,528 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "0f3aaa6870c236a0c5c90a9a4f222e6c",
+    "entities": [
+      {
+        "tableName": "User",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `info` TEXT, `username` TEXT, `whoId` INTEGER NOT NULL, `wspVersion` TEXT, `protocolRevision` TEXT, `qsVersion` TEXT, `dataSrc` TEXT, `is_logged_in` INTEGER NOT NULL, `accepted_eula` INTEGER NOT NULL, `sync_with_drive` INTEGER NOT NULL, `asked_sync_with_drive` INTEGER NOT NULL, `features` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "info",
+            "columnName": "info",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "username",
+            "columnName": "username",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "whoId",
+            "columnName": "whoId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wspVersion",
+            "columnName": "wspVersion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "protocolRevision",
+            "columnName": "protocolRevision",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "qsVersion",
+            "columnName": "qsVersion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dataSrc",
+            "columnName": "dataSrc",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isLoggedIn",
+            "columnName": "is_logged_in",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "acceptedEula",
+            "columnName": "accepted_eula",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncWithDrive",
+            "columnName": "sync_with_drive",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "askedSyncWithDrive",
+            "columnName": "asked_sync_with_drive",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "features",
+            "columnName": "features",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "KeyValue",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`key` TEXT, `value` TEXT, PRIMARY KEY(`key`))",
+        "fields": [
+          {
+            "fieldPath": "key",
+            "columnName": "key",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "value",
+            "columnName": "value",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "key"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Quote",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `request_name` TEXT, `display_name` TEXT, `market` TEXT, `symbolsFirst` TEXT, `description` TEXT, `expirationDate` TEXT, `order` INTEGER NOT NULL, `type` INTEGER NOT NULL, `is_not_permissioned` INTEGER NOT NULL, `is_invalid` INTEGER NOT NULL, `user_id` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "requestName",
+            "columnName": "request_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "displayName",
+            "columnName": "display_name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "market",
+            "columnName": "market",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "symbolsFirst",
+            "columnName": "symbolsFirst",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expirationDate",
+            "columnName": "expirationDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "order",
+            "columnName": "order",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isNotPermissioned",
+            "columnName": "is_not_permissioned",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isInvalid",
+            "columnName": "is_invalid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "user_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Suggestion",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` TEXT, `query` TEXT, `user_id` INTEGER NOT NULL, PRIMARY KEY(`_id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "_id",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "query",
+            "columnName": "query",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "user_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "quote_value",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`quote_value_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `quote_id` INTEGER NOT NULL, `last` TEXT, `last_ticknum` TEXT, `change` TEXT, `user_description` TEXT, `issue_description` TEXT, `pct_change` TEXT, `quote_delay` TEXT, `actual_symbol` TEXT, `cum_volume` INTEGER, `trade_date_time` TEXT, `open_price` TEXT, `high_price` TEXT, `low_price` TEXT, `best_bid` TEXT, `current_ask` TEXT, `settle_date` TEXT, `settlement_price` TEXT, FOREIGN KEY(`quote_id`) REFERENCES `Quote`(`_id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "quote_value_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "quoteId",
+            "columnName": "quote_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "last",
+            "columnName": "last",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastTicknum",
+            "columnName": "last_ticknum",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "change",
+            "columnName": "change",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "userDescription",
+            "columnName": "user_description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "issueDescription",
+            "columnName": "issue_description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pctChange",
+            "columnName": "pct_change",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "quoteDelay",
+            "columnName": "quote_delay",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "actualSymbol",
+            "columnName": "actual_symbol",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "volume",
+            "columnName": "cum_volume",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tradeDateTime",
+            "columnName": "trade_date_time",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "openPrice",
+            "columnName": "open_price",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "highPrice",
+            "columnName": "high_price",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lowPrice",
+            "columnName": "low_price",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currentBestBid",
+            "columnName": "best_bid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currentAsk",
+            "columnName": "current_ask",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "settleDate",
+            "columnName": "settle_date",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "settlementPrice",
+            "columnName": "settlement_price",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "quote_value_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_quote_value_quote_id",
+            "unique": false,
+            "columnNames": [
+              "quote_id"
+            ],
+            "createSql": "CREATE  INDEX `index_quote_value_quote_id` ON `${TABLE_NAME}` (`quote_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "Quote",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "quote_id"
+            ],
+            "referencedColumns": [
+              "_id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "news_category",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `name` TEXT, `query` TEXT, `keywords` TEXT, `order` INTEGER NOT NULL, `user_id` INTEGER NOT NULL, `is_quote_related` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "query",
+            "columnName": "query",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "keywords",
+            "columnName": "keywords",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "order",
+            "columnName": "order",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "user_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isQuoteRelated",
+            "columnName": "is_quote_related",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "chart_data",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`quote_id` INTEGER NOT NULL, `interval` INTEGER NOT NULL, `date_time` TEXT, `open` TEXT, `high` TEXT, `low` TEXT, `close` TEXT, `volume` TEXT, `open_int` TEXT, `is_null` INTEGER NOT NULL, PRIMARY KEY(`date_time`))",
+        "fields": [
+          {
+            "fieldPath": "quoteId",
+            "columnName": "quote_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "interval",
+            "columnName": "interval",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dateTime",
+            "columnName": "date_time",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "open",
+            "columnName": "open",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "high",
+            "columnName": "high",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "low",
+            "columnName": "low",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "close",
+            "columnName": "close",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "volume",
+            "columnName": "volume",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "openInt",
+            "columnName": "open_int",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isNull",
+            "columnName": "is_null",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "date_time"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"0f3aaa6870c236a0c5c90a9a4f222e6c\")"
+    ]
+  }
+}

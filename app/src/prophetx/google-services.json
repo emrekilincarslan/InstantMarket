@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "324733346520",
+    "firebase_url": "https://financex-faf1c.firebaseio.com",
+    "project_id": "financex-faf1c",
+    "storage_bucket": "financex-faf1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324733346520:android:31d09af4fe583654",
+        "android_client_info": {
+          "package_name": "com.fondova.financex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324733346520-qshgrb5hh5oqn3jgs1h0ng3iubrs4n6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-7HKIJKbGVGwL706t8ThejPp54RIqTkY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/padding_large">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#DE000000"
+        android:textSize="18sp"
+        tools:text="Label" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:textColor="#8A000000"
+        android:textSize="16sp"
+        tools:text="Message here" />
+
+    <TextView
+        android:id="@+id/tv_positive_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/margin_nano"
+        android:background="@drawable/ripple_effect"
+        android:padding="@dimen/padding_medium"
+        android:textAllCaps="true"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        tools:text="@string/allow_cloud_data" />
+
+    <TextView
+        android:id="@+id/tv_negative_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/ripple_effect"
+        android:padding="@dimen/padding_medium"
+        android:textAllCaps="true"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        tools:text="@string/use_local_data" />
+
+</LinearLayout>

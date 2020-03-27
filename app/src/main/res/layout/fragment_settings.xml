@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_medium">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/margin_medium"/>
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/margin_medium"/>
+
+        <TextView
+            android:id="@+id/tv_auto_refresh_rate"
+            style="@style/settings_tv_header"
+            android:text="@string/auto_refresh_rate"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"/>
+
+        <TextView
+            android:id="@+id/tv_5_seconds"
+            style="@style/settings_checkbox_label"
+            android:layout_marginTop="@dimen/settings_label_spacing"
+            android:text="@string/_5_seconds"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/tv_auto_refresh_rate"/>
+
+        <CheckBox
+            android:id="@+id/cb_5_seconds"
+            style="@style/settings_checkbox"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_5_seconds"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"/>
+
+        <TextView
+            android:id="@+id/tv_30_seconds"
+            style="@style/settings_checkbox_label"
+            android:text="@string/_30_seconds"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/tv_5_seconds"/>
+
+        <CheckBox
+            android:id="@+id/cb_30_seconds"
+            style="@style/settings_checkbox"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_30_seconds"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"/>
+
+        <TextView
+            android:id="@+id/tv_60_seconds"
+            style="@style/settings_checkbox_label"
+            android:text="@string/_60_seconds"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/tv_30_seconds"/>
+
+        <CheckBox
+            android:id="@+id/cb_60_seconds"
+            style="@style/settings_checkbox"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_60_seconds"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"/>
+
+        <TextView
+            android:id="@+id/tv_5_minutes"
+            style="@style/settings_checkbox_label"
+            android:text="@string/_5_minutes"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/tv_60_seconds"/>
+
+        <CheckBox
+            android:id="@+id/cb_5_minutes"
+            style="@style/settings_checkbox"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_5_minutes"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"/>
+
+        <TextView
+            android:id="@+id/tv_off_manual_refresh"
+            style="@style/settings_checkbox_label"
+            android:text="@string/off_manual_refresh"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/tv_5_minutes"/>
+
+        <CheckBox
+            android:id="@+id/cb_off_manual_refresh"
+            style="@style/settings_checkbox"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_off_manual_refresh"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"/>
+
+        <View
+            android:id="@+id/v_divider"
+            style="@style/settings_divider"
+            app:layout_constraintTop_toBottomOf="@+id/cb_off_manual_refresh"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_account"
+            style="@style/settings_tv_header"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/account"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/v_divider"/>
+
+        <Button
+            android:id="@+id/btn_disconnect"
+            style="@style/settings_btn"
+            android:layout_marginTop="@dimen/settings_label_spacing"
+            android:text="@string/disconnect"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/tv_account"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            style="@style/settings_btn"
+            android:text="@string/logout"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/btn_disconnect"/>
+
+        <View
+            android:id="@+id/v_divider_two"
+            style="@style/settings_divider"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/btn_logout"/>
+
+        <TextView
+            android:id="@+id/tv_help"
+            style="@style/settings_tv_header"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/support"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/v_divider_two"/>
+
+        <Button
+            android:id="@+id/btn_welcome"
+            style="@style/settings_btn"
+            android:layout_marginTop="@dimen/settings_label_spacing"
+            android:text="@string/stock_help_website"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/tv_help"/>
+
+        <Button
+            android:id="@+id/btn_help"
+            style="@style/settings_btn"
+            android:text="@string/about_stock_help"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/btn_welcome"/>
+
+        <Button
+            android:id="@+id/btn_about"
+            style="@style/settings_btn"
+            android:text="@string/about_stock_financex_version"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/btn_help"/>
+
+        <Button
+            android:id="@+id/btn_email"
+            style="@style/settings_btn"
+            android:text="@string/email_financex_support"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/btn_about"/>
+
+        <View
+            android:id="@+id/v_divider_three"
+            style="@style/settings_divider"
+            app:layout_constraintTop_toBottomOf="@+id/btn_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tv_legal"
+            style="@style/settings_tv_header"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/legal"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintTop_toBottomOf="@+id/v_divider_three"/>
+
+        <Button
+            android:id="@+id/btn_privacy_policy"
+            style="@style/settings_btn"
+            android:layout_marginTop="@dimen/settings_label_spacing"
+            android:text="@string/privacy_policy"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/tv_legal"/>
+
+        <Button
+            android:id="@+id/btn_eula"
+            style="@style/settings_btn"
+            android:text="@string/eula"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline_left"
+            app:layout_constraintRight_toLeftOf="@+id/guideline_right"
+            app:layout_constraintTop_toBottomOf="@+id/btn_privacy_policy"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

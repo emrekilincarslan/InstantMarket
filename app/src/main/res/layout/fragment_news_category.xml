@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/fl_root"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_empty"
+        style="@style/NewsEmptyTextView"
+        android:text="@string/error_no_news_articles"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/adapter_news_article"
+        />
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/cl_progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/ThemeOverlay.AppCompat"
+        />
+</FrameLayout>

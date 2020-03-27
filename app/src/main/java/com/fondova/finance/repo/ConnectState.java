@@ -1,0 +1,15 @@
+package com.fondova.finance.repo;
+
+public enum ConnectState {
+    CONNECTING,
+    CONNECTED,
+    DISCONNECTED,
+    DISCONNECTED_NO_RETRY,
+    USER_LOGGING_IN,
+    CONNECTION_FAILED,
+    CONNECTION_LOST,
+    SEATBUMP,
+    LOGIN_FAILURE,
+    LOGGED_OUT,
+    USER_LOGGED_OUT
+}

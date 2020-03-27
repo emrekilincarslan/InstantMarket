@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/cl_row"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="57dp"
+                                             android:paddingEnd="@dimen/padding_medium"
+                                             android:paddingStart="@dimen/padding_medium"
+    >
+
+    <ImageView
+        android:id="@+id/iv_reorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/padding_pre_medium"
+        android:src="@drawable/ic_reorder"
+        android:tint="@color/quote_reorder_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/content_desc_icon_drag"
+        />
+
+    <TextView
+        android:id="@+id/tv_symbol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_small"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_symbol_name"
+        app:layout_constraintLeft_toRightOf="@+id/iv_reorder"
+        app:layout_constraintRight_toLeftOf="@+id/iv_delete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="\@CN17 371\'4"/>
+
+    <TextView
+        android:id="@+id/tv_symbol_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_small"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/white_70p"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_symbol"
+        app:layout_constraintRight_toLeftOf="@+id/iv_delete"
+        app:layout_constraintTop_toBottomOf="@+id/tv_symbol"
+        tools:text="CORN July 2017"/>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        android:tint="@color/quote_reorder_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/content_desc_icon_delete"
+        />
+
+</android.support.constraint.ConstraintLayout>
+
+
+

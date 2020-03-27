@@ -1,0 +1,302 @@
+import java.util.regex.Matcher
+import java.util.regex.Pattern
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+task aaaprintVar << {
+    println System.getenv('HOME')
+    println System.getenv('ANDROID_KEY_ALIAS')
+    println project.property("BUILD_NUMBER_TAG")
+}
+
+/* AutoVersion Helpers */
+def autoVersion_props = new Properties()
+def folder = new File("$project.rootDir/scripts")
+if (!folder.exists()) {
+    // Create all folders up-to and including B
+    folder.mkdirs()
+}
+new File(folder, "autoVersion.properties").withWriterAppend { w ->
+    w << ""
+}
+
+def autoPropsFile = new File(folder, "autoVersion.properties")
+autoPropsFile.withInputStream { autoVersion_props.load(it) }
+
+def readVersionCode = { ->
+    def versionCodeString = autoVersion_props.getProperty("gitCommitCount") ?: "0"
+    return 1
+}
+/* End AutoVersion Helpers */
+
+android {
+
+    def readVersionName = { ->
+        def versionName = autoVersion_props.getProperty("gitVersionTagNumber") ?: "0.0.0"
+        return versionName
+    }
+
+    def getDTNInstantMarketApplicationIdSuffix = { ->
+        println("getDTNInstantMarketApplicationIdSuffix")
+        return readVersionName() + '-' + readVersionCode() + '+' + gitShortHash()
+    }
+
+    def getDTNApplicationIdSuffix = { ->
+        println("getDTNApplicationIddSuffix")
+        return readVersionName() + '-' + readVersionCode() + '+' + gitShortHash()
+    }
+
+    def gitPrefix = 'asdf'
+
+    defaultConfig {
+        applicationId "com"
+        minSdkVersion 21
+        targetSdkVersion 26
+        buildConfigField "String", "GIT_COMMIT_HASH", "\"" + gitCommitHash() + "\"";
+        println "VersionCode: " + readVersionCode()
+        versionCode readVersionCode()
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation":
+                                     "$projectDir/schemas".toString()]
+            }
+        }
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    flavorDimensions "base"
+    productFlavors {
+        financex {
+            dimension "base"
+            applicationId 'com.fondova.financex'
+            versionName readVersionName()
+            setProperty("archivesBaseName", getDTNApplicationIdSuffix())
+            buildConfigField('String', 'HOCKEYAPP_SDK_APP_ID', "\"750acaf49a6a418abdc3d8e36e1d1b83\"")
+            manifestPlaceholders = [HOCKEYAPP_APP_ID: "750acaf49a6a418abdc3d8e36e1d1b83"]
+        }
+        stockinstantmarket {
+            dimension "base"
+            applicationId 'com.stock.instantmarket'
+            versionName = readVersionName()
+            setProperty("archivesBaseName", getDTNInstantMarketApplicationIdSuffix())
+            buildConfigField('String', 'HOCKEYAPP_SDK_APP_ID', "\"8ee7b2f987d9402c86c0c96dfff52306\"")
+            manifestPlaceholders = [HOCKEYAPP_APP_ID: "8ee7b2f987d9402c86c0c96dfff52306"]
+        }
+    }
+
+    def getCurrentFlavor = {
+        Gradle gradle = getGradle()
+        String  tskReqStr = gradle.getStartParameter().getTaskRequests().toString()
+
+        Pattern pattern;
+
+        if( tskReqStr.contains( "assemble" ) )
+            pattern = Pattern.compile("assemble(\\w+)(Release|Debug)")
+        else
+            pattern = Pattern.compile("generate(\\w+)(Release|Debug)")
+
+        Matcher matcher = pattern.matcher( tskReqStr )
+
+        if( matcher.find() )
+            return matcher.group(1).toLowerCase() + '-'
+        else
+        {
+            println "NO MATCH FOUND"
+            return "";
+        }
+    }
+
+    def runAutoVersion = { ->
+        try {
+            def stdout = new ByteArrayOutputStream()
+            exec {
+                commandLine = '../scripts/auto-version.sh'
+                args = [getCurrentFlavor()]
+                standardOutput = stdout
+            }
+            return stdout.toString().trim()
+        }
+        catch (error) {
+            println 'Error: ' + error
+            return null;
+        }
+    }
+
+
+
+    preBuild.doFirst {
+        println "PreBuild"
+        println "Running auto-version.sh"
+        println runAutoVersion()
+        project.task("printProps")
+    }
+
+    task autoVersion << {
+        println "PreBuild"
+        println "Running auto-version.sh"
+        println runAutoVersion()
+        println "Finished running auto-version.sh"
+        project.task("printProps")
+    }
+
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    compileSdkVersion 26
+
+
+
+    def code_sign_props = new Properties()
+    def code_sign_file = new File("$rootProject.projectDir/secrets/code_sign.properties")
+    def codeSignFile = code_sign_file.exists() ? code_sign_file : file("$rootProject.projectDir/secrets/default_code_sign.properties")
+    println("CodeSignFile: " + codeSignFile)
+    codeSignFile.withInputStream { code_sign_props.load(it) }
+    def keystoreFile = new File("$rootProject.projectDir/secrets/upload.jks")
+    def releaseKeyStoreFile = keystoreFile.exists() ? keystoreFile : file("$rootProject.projectDir/../ProjectSetup/qa.keystore")
+    println("releaseKeyStoreFile: " + releaseKeyStoreFile)
+    signingConfigs {
+        debug {
+            storeFile releaseKeyStoreFile
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+        qa {
+            storeFile releaseKeyStoreFile
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+        release {
+            storeFile releaseKeyStoreFile
+            storePassword code_sign_props.getProperty("ANDROID_KEY_STORE_PASSWORD") ?: 'android'
+            keyAlias code_sign_props.getProperty("ANDROID_KEY_ALIAS") ?: 'androiddebugkey'
+            keyPassword code_sign_props.getProperty("ANDROID_KEY_PASSWORD") ?: 'android'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            debuggable true
+
+        }
+        qa {
+            minifyEnabled false
+            signingConfig signingConfigs.qa
+            debuggable true
+
+        }
+        release {
+            buildConfigField "Boolean", "RELEASE_TYPE", "true"
+            buildConfigField "Boolean", "ENABLE_DEVICE_ID_CHANGE", "false"
+
+            debuggable false
+            minifyEnabled false
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
+        }
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+}
+
+def gitBranch() {
+    def branch = ""
+    def proc = "git rev-parse --abbrev-ref HEAD".execute()
+    proc.in.eachLine { line -> branch = line }
+    proc.err.eachLine { line -> println line }
+    proc.waitFor()
+    branch
+}
+
+def gitShortHash() {
+    def hash = ""
+    def proc = "git rev-parse --short HEAD".execute()
+    proc.in.eachLine { line -> hash = line }
+    proc.err.eachLine { line -> println line }
+    proc.waitFor()
+    hash
+}
+
+def gitCommitHash() {
+    def hash = ""
+    def proc = "git rev-parse HEAD".execute()
+    proc.in.eachLine { line -> hash = line }
+    proc.err.eachLine { line -> println line }
+    proc.waitFor()
+    hash
+}
+
+dependencies {
+    def support_version = "26.1.0"
+    def butterknife_version = "8.8.1"
+    def arch_version = "1.0.0-alpha9-1"
+    def arch_runtime_version = "1.0.0"
+    def retrofit_version = "2.3.0"
+    def okhttp_version = "3.9.0"
+    def dagger_version = "2.11"
+    def hockeyapp_android_sdk_version = "4.1.4"
+    def socket_library_version = "2.3"
+
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:customtabs:$support_version"
+    implementation "com.android.support.constraint:constraint-layout:1.1.2"
+    implementation "com.jakewharton:butterknife:$butterknife_version"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknife_version"
+    implementation "net.danlew:android.joda:2.9.9"
+    implementation "android.arch.persistence.room:runtime:$arch_version"
+    annotationProcessor "android.arch.persistence.room:compiler:$arch_version"
+    implementation "android.arch.lifecycle:extensions:$arch_version"
+    annotationProcessor "android.arch.lifecycle:compiler:$arch_version"
+    implementation "android.arch.lifecycle:runtime:$arch_runtime_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
+    implementation "com.google.dagger:dagger:$dagger_version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
+    implementation project(':shinobicontrols-android-charts-premium-java-1.9.3-1')
+    implementation "net.hockeyapp.android:HockeySDK:$hockeyapp_android_sdk_version"
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation "com.google.android.gms:play-services-drive:16.0.0"
+    implementation "com.neovisionaries:nv-websocket-client:$socket_library_version"
+    implementation "com.google.android.gms:play-services-analytics:16.0.6"
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+
+    /* Tests */
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation 'junit:junit:4.12'
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.0.0-RC1"
+    testImplementation "android.arch.core:core-testing:$arch_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+}
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android-extensions'
+
+repositories {
+    mavenCentral()
+}

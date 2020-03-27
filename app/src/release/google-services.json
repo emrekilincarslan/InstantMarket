@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "431392979472",
+    "project_id": "financex-prod"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431392979472:android:31d09af4fe583654",
+        "android_client_info": {
+          "package_name": "com.fondova.financex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431392979472-lvk4ad2iafpn3b6eustrtg9j6qo00bk7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "431392979472-7o8udknokmdftga7i4pn0g48b77b78uj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fondova.financex",
+            "certificate_hash": "8e94e8215eb7467f1a1a798b9df202aad1431e1a"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBke_gCov2Dpse75bMJK1wGS0KpPTdVhDc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

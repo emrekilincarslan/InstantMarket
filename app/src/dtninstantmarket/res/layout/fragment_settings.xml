@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_auto_refresh_rate"
+            style="@style/settings_tv_header"
+            android:padding="@dimen/padding_small"
+            android:text="@string/auto_refresh_rate"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium"
+                android:paddingStart="30dp"
+                android:id="@+id/tv_5_seconds"
+                style="@style/settings_checkbox_label"
+                android:text="@string/_5_seconds"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <CheckBox
+                android:id="@+id/cb_5_seconds"
+                style="@style/settings_checkbox"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_medium"
+                android:paddingStart="30dp"
+                android:id="@+id/tv_30_seconds"
+                style="@style/settings_checkbox_label"
+                android:text="@string/_30_seconds"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <CheckBox
+                android:id="@+id/cb_30_seconds"
+                style="@style/settings_checkbox"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_60_seconds"
+                android:padding="@dimen/margin_medium"
+                android:paddingStart="30dp"
+                style="@style/settings_checkbox_label"
+                android:text="@string/_60_seconds"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <CheckBox
+                android:id="@+id/cb_60_seconds"
+                style="@style/settings_checkbox"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_5_minutes"
+                android:padding="@dimen/margin_medium"
+                android:paddingStart="30dp"
+                style="@style/settings_checkbox_label"
+                android:text="@string/_5_minutes"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <CheckBox
+                android:id="@+id/cb_5_minutes"
+                style="@style/settings_checkbox"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_off_manual_refresh"
+                android:padding="@dimen/margin_medium"
+                android:paddingStart="30dp"
+                style="@style/settings_checkbox_label"
+                android:text="@string/off_manual_refresh"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <CheckBox
+                android:id="@+id/cb_off_manual_refresh"
+                style="@style/settings_checkbox"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_account"
+            style="@style/settings_tv_header"
+            android:padding="@dimen/padding_small"
+            android:text="@string/account"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_disconnect"
+            style="@style/settings_btn"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/disconnect"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_logout"
+            style="@style/settings_btn"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/logout"/>
+
+        <TextView
+            android:id="@+id/tv_help"
+            style="@style/settings_tv_header"
+            android:padding="@dimen/padding_small"
+            android:text="@string/support"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_welcome"
+            style="@style/settings_btn"
+            android:padding="@dimen/margin_medium"
+            android:visibility="gone"
+            android:text="@string/support"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_help"
+            style="@style/settings_btn"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/about_stock_help"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_about"
+            style="@style/settings_btn"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/about_stock_financex_version"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_email"
+            style="@style/settings_btn"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/email_financex_support"/>
+
+        <TextView
+            android:id="@+id/tv_legal"
+            style="@style/settings_tv_header"
+            android:padding="@dimen/padding_small"
+            android:text="@string/legal"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_privacy_policy"
+            style="@style/settings_btn"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/privacy_policy"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_eula"
+            style="@style/settings_btn"
+            android:padding="@dimen/margin_medium"
+            android:text="@string/eula"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

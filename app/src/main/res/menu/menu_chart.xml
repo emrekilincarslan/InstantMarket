@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chart_bar"
+        android:title="@string/bar" />
+    <item
+        android:id="@+id/chart_line"
+        android:title="@string/line" />
+    <item
+        android:id="@+id/chart_candlestick"
+        android:title="@string/candlestick" />
+</menu>

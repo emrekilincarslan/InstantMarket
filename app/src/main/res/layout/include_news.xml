@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="@dimen/news_row_height"
+                                             android:id="@+id/cl_row"
+    >
+
+    <TextView
+        android:id="@+id/tv_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/padding_medium"
+        android:textColor="@color/article_title"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_article_date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Article Title Goes Here"
+        />
+
+    <TextView
+        android:id="@+id/tv_article_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_news_date"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/padding_medium"
+        android:textColor="@color/article_date"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_article"
+        tools:text="5/18/2017 12:35:00p CDT"
+        />
+
+    <View
+        style="@style/news_divider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

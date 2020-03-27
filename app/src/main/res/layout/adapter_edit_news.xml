@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_row"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:paddingEnd="@dimen/padding_medium"
+                android:paddingStart="@dimen/padding_medium"
+    >
+
+    <ImageView
+        android:id="@+id/iv_reorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/content_desc_icon_drag"
+        android:src="@drawable/ic_reorder"
+        android:tint="@color/edit_news_icon"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_toEndOf="@+id/iv_reorder"
+        android:layout_toStartOf="@+id/iv_edit"
+        android:textColor="@color/article_title"
+        android:textSize="14sp"
+        tools:text="\@CN17 371\'4"
+        />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/iv_delete"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:contentDescription="@string/content_desc_icon_edit"
+        android:src="@drawable/ic_edit_news"
+        />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/content_desc_icon_delete"
+        android:src="@drawable/ic_delete"
+        android:tint="@color/edit_news_icon"
+        />
+
+</RelativeLayout>
+
+
+

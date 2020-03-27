@@ -1,0 +1,10 @@
+
+for_lane :upload_financex_alpha do
+    json_key_file "app/src/Google Play Android Developer-b15c45cb7ed8.json" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
+    package_name "com.fondova.financex" # e.g. com.krausefx.app
+end
+
+for_lane :upload_instant_market_alpha do
+    json_key_file "app/src/Google Play Android Developer-b15c45cb7ed8.json"
+    package_name "com.stock.instantmarket" # e.g. com.krausefx.app
+end

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_identifier">stockinstantmarket</string>
+    <string name="app_name">STOCK Instant Market</string>
+    <string name="about_stock_financex">About STOCK Instant Market</string>
+    <string name="about_stock_help">Help</string>
+    <string name="about_stock_financex_version">About STOCK Instant Market Version: %1$s</string>
+    <string name="email_financex_support">Email STOCK Instant Market Support</string>
+    <string name="toolbar_title"></string>
+    <string name="email_address">instantmarket@stock.com</string>
+    <string name="octane_app_name">#InstMktMb:Andrd</string>
+    <string name="label">Group</string>
+    <string name="add_a_label">Add a group</string>
+    <string name="enter_a_label_name_to_add_to_your_symbols_page">Enter a group name to add to your symbols page.</string>
+    <string name="enter_label_name">Enter group name</string>
+    <string name="label_has_been_added">Group has been added.</string>
+
+</resources>

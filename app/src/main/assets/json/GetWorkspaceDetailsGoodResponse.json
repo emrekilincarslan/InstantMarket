@@ -1,0 +1,792 @@
+{
+  "meta": {
+    "command": "WebRequest",
+    "requestId": "835e4bfb-4bcd-4db5-84cf-8734c4e441ce",
+    "status": 200
+  },
+  "data": [
+    {
+      "data": {
+        "WorkspaceId": "d7f91b74-ec88-57b6-93d1-3d1bc805cb09",
+        "Name": "ENERGY",
+        "IsDefault": true,
+        "Settings": {
+          "ExpandedFields": [
+            "Last",
+            "Change",
+            "High",
+            "Low",
+            "Open",
+            "Bid",
+            "Ask",
+            "CumVolume",
+            "OpenInterest",
+            "Volatility",
+            "BidSize",
+            "AskSize"
+          ],
+          "Groups": [
+            {
+              "DisplayName": "WTI CRUDE OIL",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "QCL@1",
+                  "Type": "Symbol",
+                  "Value": "QCL@1"
+                },
+                {
+                  "DisplayName": "QCL@2",
+                  "Type": "Symbol",
+                  "Value": "QCL@2"
+                },
+                {
+                  "DisplayName": "QCL@3",
+                  "Type": "Symbol",
+                  "Value": "QCL@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "UNLEADED GASOLINE",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "QRB@1",
+                  "Type": "Symbol",
+                  "Value": "QRB@1"
+                },
+                {
+                  "DisplayName": "QRB@2",
+                  "Type": "Symbol",
+                  "Value": "QRB@2"
+                },
+                {
+                  "DisplayName": "QRB@3",
+                  "Type": "Symbol",
+                  "Value": "QRB@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "HEATING OIL",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "QHO@1",
+                  "Type": "Symbol",
+                  "Value": "QHO@1"
+                },
+                {
+                  "DisplayName": "QHO@2",
+                  "Type": "Symbol",
+                  "Value": "QHO@2"
+                },
+                {
+                  "DisplayName": "QHO@3",
+                  "Type": "Symbol",
+                  "Value": "QHO@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "321 CRACK",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "321 CRACK",
+                  "Type": "Expression",
+                  "Value": "((((2*QRB@1)*42)+(QHO@1*42))-(3*QCL@1))/3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "DIESEL",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "QKL@1",
+                  "Type": "Symbol",
+                  "Value": "QKL@1"
+                },
+                {
+                  "DisplayName": "QKL@2",
+                  "Type": "Symbol",
+                  "Value": "QKL@2"
+                },
+                {
+                  "DisplayName": "QKL@3",
+                  "Type": "Symbol",
+                  "Value": "QKL@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "NATURAL GAS",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "QNG@1",
+                  "Type": "Symbol",
+                  "Value": "QNG@1"
+                },
+                {
+                  "DisplayName": "QNG@2",
+                  "Type": "Symbol",
+                  "Value": "QNG@2"
+                },
+                {
+                  "DisplayName": "QNG@3",
+                  "Type": "Symbol",
+                  "Value": "QNG@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "ICE BRENT",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "EB@1",
+                  "Type": "Symbol",
+                  "Value": "EB@1"
+                },
+                {
+                  "DisplayName": "EB@2",
+                  "Type": "Symbol",
+                  "Value": "EB@2"
+                },
+                {
+                  "DisplayName": "EB@3",
+                  "Type": "Symbol",
+                  "Value": "EB@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "NYMEX RBOB",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "IRB@1",
+                  "Type": "Symbol",
+                  "Value": "IRB@1"
+                },
+                {
+                  "DisplayName": "IRB@2",
+                  "Type": "Symbol",
+                  "Value": "IRB@2"
+                },
+                {
+                  "DisplayName": "IRB@3",
+                  "Type": "Symbol",
+                  "Value": "IRB@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "ICE HEATING OIL",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "IHO@1",
+                  "Type": "Symbol",
+                  "Value": "IHO@1"
+                },
+                {
+                  "DisplayName": "IHO@2",
+                  "Type": "Symbol",
+                  "Value": "IHO@2"
+                },
+                {
+                  "DisplayName": "IHO@3",
+                  "Type": "Symbol",
+                  "Value": "IHO@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "UK NATURAL GAS",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "FN@1",
+                  "Type": "Symbol",
+                  "Value": "FN@1"
+                },
+                {
+                  "DisplayName": "FN@2",
+                  "Type": "Symbol",
+                  "Value": "FN@2"
+                },
+                {
+                  "DisplayName": "FN@3",
+                  "Type": "Symbol",
+                  "Value": "FN@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "GASPOOL",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "G2M@1",
+                  "Type": "Symbol",
+                  "Value": "G2M@1"
+                },
+                {
+                  "DisplayName": "G2M@2",
+                  "Type": "Symbol",
+                  "Value": "G2M@2"
+                },
+                {
+                  "DisplayName": "G2M@3",
+                  "Type": "Symbol",
+                  "Value": "G2M@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "NBP",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "NBM@1",
+                  "Type": "Symbol",
+                  "Value": "NBM@1"
+                },
+                {
+                  "DisplayName": "NBM@2",
+                  "Type": "Symbol",
+                  "Value": "NBM@2"
+                },
+                {
+                  "DisplayName": "NBM@3",
+                  "Type": "Symbol",
+                  "Value": "NBM@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "NCG",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "G0M@1",
+                  "Type": "Symbol",
+                  "Value": "G0M@1"
+                },
+                {
+                  "DisplayName": "G0M@2",
+                  "Type": "Symbol",
+                  "Value": "G0M@2"
+                },
+                {
+                  "DisplayName": "G0M@3",
+                  "Type": "Symbol",
+                  "Value": "G0M@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "ARA COAL",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "T2M@1",
+                  "Type": "Symbol",
+                  "Value": "T2M@1"
+                },
+                {
+                  "DisplayName": "T2M@2",
+                  "Type": "Symbol",
+                  "Value": "T2M@2"
+                },
+                {
+                  "DisplayName": "T2M@3",
+                  "Type": "Symbol",
+                  "Value": "T2M@3"
+                }
+              ]
+            },
+            {
+              "DisplayName": "US STOCK MARKET",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "AAPL",
+                  "Type": "Symbol",
+                  "Value": "AAPL"
+                },
+                {
+                  "DisplayName": "MSFT",
+                  "Type": "Symbol",
+                  "Value": "MSFT"
+                },
+                {
+                  "DisplayName": "@ES@1",
+                  "Type": "Symbol",
+                  "Value": "@ES@1"
+                }
+              ]
+            }
+          ]
+        },
+        "Charts": {
+          "Mini": [
+            {
+              "Symbol": "QCL@1"
+            },
+            {
+              "Symbol": "QRB@1"
+            },
+            {
+              "Symbol": "QNG@1"
+            },
+            {
+              "Symbol": "@ES@1"
+            }
+          ],
+          "ShowMinis": null,
+          "Mid": [
+            {
+              "Symbol": "QCL@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              }
+            },
+            {
+              "Symbol": "QNG@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              }
+            }
+          ],
+          "Full": [
+            {
+              "Symbol": "QCL@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QCL@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QCL@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QRB@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QRB@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QRB@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QHO@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QHO@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QHO@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "((((2*QRB@1)*42)+(QHO@1*42))-(3*QCL@1))/3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QKL@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QKL@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QKL@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QNG@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QNG@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "QNG@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "EB@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "EB@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "EB@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "IRB@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "IRB@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "IRB@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "IHO@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "IHO@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "IHO@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "FN@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "FN@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "FN@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "G2M@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "G2M@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "G2M@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "NBM@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "NBM@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "NBM@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "G0M@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "G0M@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "G0M@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "T2M@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "T2M@2",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "T2M@3",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "AAPL",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "MSFT",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            },
+            {
+              "Symbol": "@ES@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": null,
+              "ComparisonSymbols": null
+            }
+          ]
+        },
+        "News": null
+      }
+    }
+  ]
+}

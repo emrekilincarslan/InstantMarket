@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('shinobicontrols-android-charts-premium-java-1.9.3-1.aar'))

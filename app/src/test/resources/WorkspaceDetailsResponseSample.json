@@ -1,0 +1,1185 @@
+{
+  "meta": {
+    "command": "WebRequest",
+    "requestId": "D3BF3E6C-9C04-4FAF-99C1-B250881EA1BA",
+    "status": 200
+  },
+  "data": [
+    {
+      "data": {
+        "WorkspaceId": "e1b2bcb5-fb8f-5f2a-ad65-b4598f2e464f",
+        "Name": "My Workspace",
+        "IsDefault": true,
+        "Settings": {
+          "ExpandedFields": [
+            "Last",
+            "Change",
+            "High",
+            "Low",
+            "Open",
+            "Bid",
+            "Ask",
+            "CumVolume",
+            "OpenInterest",
+            "Volatility",
+            "BidSize",
+            "AskSize"
+          ],
+          "Groups": [
+            {
+              "DisplayName": "US AG",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "@C@1",
+                  "Type": "Symbol",
+                  "Value": "@C@1"
+                },
+                {
+                  "DisplayName": "@W@1",
+                  "Type": "Symbol",
+                  "Value": "@W@1"
+                },
+                {
+                  "DisplayName": "@KW@1",
+                  "Type": "Symbol",
+                  "Value": "@KW@1"
+                },
+                {
+                  "DisplayName": "@MW@1",
+                  "Type": "Symbol",
+                  "Value": "@MW@1"
+                },
+                {
+                  "DisplayName": "@S@1",
+                  "Type": "Symbol",
+                  "Value": "@S@1"
+                },
+                {
+                  "DisplayName": "@SM@1",
+                  "Type": "Symbol",
+                  "Value": "SM@1"
+                },
+                {
+                  "DisplayName": "@BO@1",
+                  "Type": "Symbol",
+                  "Value": "@BO@1"
+                },
+                {
+                  "DisplayName": "@RR@1",
+                  "Type": "Symbol",
+                  "Value": "@RR@1"
+                },
+                {
+                  "DisplayName": "@KC@1",
+                  "Type": "Symbol",
+                  "Value": "@KC@1"
+                },
+                {
+                  "DisplayName": "@SB@1",
+                  "Type": "Symbol",
+                  "Value": "@SB@1"
+                },
+                {
+                  "DisplayName": "@CC@1",
+                  "Type": "Symbol",
+                  "Value": "@CC@1"
+                },
+                {
+                  "DisplayName": "@CT@1",
+                  "Type": "Symbol",
+                  "Value": "@CT@1"
+                },
+                {
+                  "DisplayName": "@OJ@1",
+                  "Type": "Symbol",
+                  "Value": "@OJ@1"
+                },
+                {
+                  "DisplayName": "@LE@1",
+                  "Type": "Symbol",
+                  "Value": "@LE@1"
+                },
+                {
+                  "DisplayName": "@GF@1",
+                  "Type": "Symbol",
+                  "Value": "@GF@1"
+                },
+                {
+                  "DisplayName": "@HE@1",
+                  "Type": "Symbol",
+                  "Value": "@HE@1"
+                }
+              ]
+            },
+            {
+              "DisplayName": "US ENERGY",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "QCL@1",
+                  "Type": "Symbol",
+                  "Value": "QCL@1"
+                },
+                {
+                  "DisplayName": "QRB@1",
+                  "Type": "Symbol",
+                  "Value": "QRB@1"
+                },
+                {
+                  "DisplayName": "QHO@1",
+                  "Type": "Symbol",
+                  "Value": "QHO@1"
+                },
+                {
+                  "DisplayName": "QNG@1",
+                  "Type": "Symbol",
+                  "Value": "QNG@1"
+                },
+                {
+                  "DisplayName": "@AC@1",
+                  "Type": "Symbol",
+                  "Value": "@AC@1"
+                }
+              ]
+            },
+            {
+              "DisplayName": "US STOCK MARKET",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "INDU.X",
+                  "Type": "Symbol",
+                  "Value": "INDU.X"
+                },
+                {
+                  "DisplayName": "COMPX.X",
+                  "Type": "Symbol",
+                  "Value": "COMPX.X"
+                },
+                {
+                  "DisplayName": "INX.X",
+                  "Type": "Symbol",
+                  "Value": "INX.X"
+                }
+              ]
+            },
+            {
+              "DisplayName": "CURRENCIES",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "@EU@1",
+                  "Type": "Symbol",
+                  "Value": "@EU@1"
+                },
+                {
+                  "DisplayName": "@BP@1",
+                  "Type": "Symbol",
+                  "Value": "@BP@1"
+                },
+                {
+                  "DisplayName": "@JY@1",
+                  "Type": "Symbol",
+                  "Value": "@JY@1"
+                },
+                {
+                  "DisplayName": "@CD@1",
+                  "Type": "Symbol",
+                  "Value": "@CD@1"
+                },
+                {
+                  "DisplayName": "@SF@1",
+                  "Type": "Symbol",
+                  "Value": "@SF@1"
+                },
+                {
+                  "DisplayName": "@AD@1",
+                  "Type": "Symbol",
+                  "Value": "@AD@1"
+                }
+              ]
+            },
+            {
+              "DisplayName": "US METALS",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "QGC@1",
+                  "Type": "Symbol",
+                  "Value": "QGC@1"
+                },
+                {
+                  "DisplayName": "QSI@1",
+                  "Type": "Symbol",
+                  "Value": "QSI@1"
+                },
+                {
+                  "DisplayName": "QHG@1",
+                  "Type": "Symbol",
+                  "Value": "QHG@1"
+                },
+                {
+                  "DisplayName": "QPL@1",
+                  "Type": "Symbol",
+                  "Value": "QPL@1"
+                },
+                {
+                  "DisplayName": "QPA@1",
+                  "Type": "Symbol",
+                  "Value": "QPA@1"
+                }
+              ]
+            },
+            {
+              "DisplayName": "TREASURY",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "@TU@1",
+                  "Type": "Symbol",
+                  "Value": "@TU@1"
+                },
+                {
+                  "DisplayName": "@FV@1",
+                  "Type": "Symbol",
+                  "Value": "@FV@1"
+                },
+                {
+                  "DisplayName": "@TY@1",
+                  "Type": "Symbol",
+                  "Value": "@TY@1"
+                },
+                {
+                  "DisplayName": "@US@1",
+                  "Type": "Symbol",
+                  "Value": "@US@1"
+                }
+              ]
+            },
+            {
+              "DisplayName": "WORLD",
+              "ListOfQuotes": [
+                {
+                  "DisplayName": "CA@1",
+                  "Type": "Symbol",
+                  "Value": "CA@1"
+                },
+                {
+                  "DisplayName": "PM@1",
+                  "Type": "Symbol",
+                  "Value": "PM@1"
+                },
+                {
+                  "DisplayName": "QK@1",
+                  "Type": "Symbol",
+                  "Value": "QK@1"
+                },
+                {
+                  "DisplayName": "AWM@1",
+                  "Type": "Symbol",
+                  "Value": "AWM@1"
+                },
+                {
+                  "DisplayName": "WAW@1",
+                  "Type": "Symbol",
+                  "Value": "WAW@1"
+                },
+                {
+                  "DisplayName": "PG@1",
+                  "Type": "Symbol",
+                  "Value": "PG@1"
+                },
+                {
+                  "DisplayName": "LRC@1",
+                  "Type": "Symbol",
+                  "Value": "LRC@1"
+                },
+                {
+                  "DisplayName": "QW@1",
+                  "Type": "Symbol",
+                  "Value": "QW@1"
+                },
+                {
+                  "DisplayName": "QC@1",
+                  "Type": "Symbol",
+                  "Value": "QC@1"
+                },
+                {
+                  "DisplayName": "KPO@1",
+                  "Type": "Symbol",
+                  "Value": "KPO@1"
+                },
+                {
+                  "DisplayName": "EB@1",
+                  "Type": "Symbol",
+                  "Value": "EB@1"
+                },
+                {
+                  "DisplayName": "GAS@1",
+                  "Type": "Symbol",
+                  "Value": "GAS@1"
+                },
+                {
+                  "DisplayName": "GX@1",
+                  "Type": "Symbol",
+                  "Value": "GX@1"
+                },
+                {
+                  "DisplayName": "XG@1",
+                  "Type": "Symbol",
+                  "Value": "XG@1"
+                },
+                {
+                  "DisplayName": "MT@1",
+                  "Type": "Symbol",
+                  "Value": "MT@1"
+                },
+                {
+                  "DisplayName": "LF@1",
+                  "Type": "Symbol",
+                  "Value": "LF@1"
+                },
+                {
+                  "DisplayName": "SPI@1",
+                  "Type": "Symbol",
+                  "Value": "SPI@1"
+                },
+                {
+                  "DisplayName": "BD@1",
+                  "Type": "Symbol",
+                  "Value": "BD@1"
+                },
+                {
+                  "DisplayName": "BL@1",
+                  "Type": "Symbol",
+                  "Value": "BL@1"
+                },
+                {
+                  "DisplayName": "EZ@1",
+                  "Type": "Symbol",
+                  "Value": "EZ@1"
+                },
+                {
+                  "DisplayName": "JG@1",
+                  "Type": "Symbol",
+                  "Value": "JG@1"
+                }
+              ]
+            }
+          ]
+        },
+        "Charts": {
+          "Mini": [
+            {
+              "Symbol": "INDU.X"
+            },
+            {
+              "Symbol": "@C@1"
+            },
+            {
+              "Symbol": "QCL@1"
+            },
+            {
+              "Symbol": "@EU@1"
+            }
+          ],
+          "Mid": [
+            {
+              "Symbol": "@S@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              }
+            },
+            {
+              "Symbol": "QRB@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              }
+            }
+          ],
+          "Full": [
+            {
+              "Symbol": "@C@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@W@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@KW@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@MW@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@S@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@SM@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@BO@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@RR@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@KC@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@SB@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@CC@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@CT@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@OJ@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@LE@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@GF@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@HE@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QCL@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QRB@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QHO@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QNG@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@AC@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "INDU.X",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "COMPX.X",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "INX.X",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@EU@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@BP@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@JY@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@CD@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@SF@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@AD@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QGC@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QSI@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QHG@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QPL@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QPA@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@TU@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@FV@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@TY@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "@US@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "CA@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "PM@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QK@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "AWM@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "WAW@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "PG@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "LRC@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QW@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "QC@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "KPO@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "EB@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "GAS@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "GX@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "XG@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "MT@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "LF@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "SPI@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "BD@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "BL@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "EZ@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            },
+            {
+              "Symbol": "JG@1",
+              "Type": "bar",
+              "Interval": {
+                "Count": 1,
+                "Unit": "day"
+              },
+              "Studies": [
+                {
+                  "Type": "volume"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

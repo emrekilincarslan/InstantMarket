@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <com.fondova.finance.charts.ChartHeaderView
+        android:id="@+id/title_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:maxLines="5"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/root_chart_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/quote_detail_background">
+        <com.fondova.finance.news.NewsListView
+            android:id="@+id/news_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

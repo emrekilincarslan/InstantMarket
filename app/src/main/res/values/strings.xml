@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_identifier">financex</string>
+    <string name="app_name">FinanceX</string>
+    <string name="octane_app_name">#PxMobile:Andrd</string>
+
+    <!-- Misc strings -->
+    <string name="charts">Charts</string>
+    <string name="news">News</string>
+    <string name="settings">Settings</string>
+    <string name="refresh">Refresh</string>
+    <string name="edit">Edit</string>
+    <string name="about_stock_financex">About STOCK FinanceX</string>
+    <string name="undo">Undo</string>
+    <string name="label">Label</string>
+    <string name="symbol">Symbol</string>
+
+    <!-- Images Content Descriptions -->
+    <string name="content_desc_logo_small">App Logo Small</string>
+    <string name="content_desc_logo_big">App Logo Big</string>
+    <string name="content_desc_icon_drag">Drag Item</string>
+    <string name="content_desc_icon_delete">Delete Item</string>
+    <string name="content_desc_icon_edit">Edit Item</string>
+
+    <!-- Dialogs -->
+    <string name="error">Error</string>
+    <string name="ok">OK</string>
+    <string name="loading...">Loading…</string>
+
+    <!-- Login Screen -->
+    <string name="login">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot_password_reset">Forgot Password? Reset</string>
+    <string name="empty_password">Empty password</string>
+    <string name="empty_username">Empty username</string>
+    <string name="remember_password">Remember Password</string>
+    <string name="network_error">Network not reachable</string>
+    <string name="auto_refresh_rate">Auto Refresh rate</string>
+    <string name="_5_seconds">5 Seconds</string>
+    <string name="_30_seconds">30 Seconds</string>
+    <string name="_60_seconds">60 Seconds</string>
+    <string name="_5_minutes">5 Minutes</string>
+    <string name="off_manual_refresh">Off (Manual Refresh)</string>
+    <string name="account">Account</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connect">Connect</string>
+    <string name="logout">Logout</string>
+    <string name="stock_help_website">Help Website</string>
+    <string name="about_stock_financex_version">About STOCK FinanceX Version: %1$s</string>
+    <string name="about_stock_help">Help</string>
+    <string name="email_financex_support">Email FinanceX Support</string>
+    <string name="email_address">financex@stock.com</string>
+    <string name="legal">Legal</string>
+    <string name="no_network_message">No network connection. Please connect to a network.</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="forced_logout_message">Forced logout.</string>
+    <string name="forced_logout_detail_message">"You have exceeded your login limit, Bumping oldest login"</string>
+    <string name="support">Support</string>
+    <string name="version_number">Version %1$s</string>
+    <string name="vertical_dash">|</string>
+
+    <!-- Settings Screen -->
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="eula">EULA</string>
+    <string name="accept">Accept</string>
+    <string name="mail_client_error_title">Device cannot send mail.</string>
+    <string name="mail_client_error_message">Please setup a mail account on device to send support email.</string>
+    <string name="status_">Status: %1$s</string>
+
+    <!-- Symbols screen -->
+    <string name="toolbar_title">STOCKFinanceX</string>
+    <string name="symbols">Symbols</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="auto_refresh_">Auto refresh: %s</string>
+    <string name="last_updated">Last update: </string>
+    <string name="open_price_label">O: %1$s</string>
+    <string name="high_label">H: %1$s</string>
+    <string name="low_label">L: %1$s</string>
+    <string name="bid_label">B: %1$s</string>
+    <string name="ask_label">A: %1$s</string>
+    <string name="volume_label">V: %1$s</string>
+    <string name="settle_label">S: %1$s</string>
+    <string name="date_settled_label">D: %1$s</string>
+    <string name="search">Search</string>
+    <string name="results_">Symbols results: %1$d</string>
+    <string name="symbols_count">Quote List Count: %1$d/%2$d</string>
+    <string name="categories">Categories</string>
+    <string name="add_item_error">Add Item Error</string>
+    <string name="cannot_add_item">Cannot add more than %1$d items.</string>
+    <string name="additional_results">Additional results are available. Please refine your search.</string>
+    <string name="search_by_name">Search Symbols By Name</string>
+    <string name="search_into_category">Search into %1$s</string>
+    <string name="not_connected_to_server_message">You are not connected to the server. Most functionality is unavailable. Please reconnect by selecting \'Connect\' from the Settings menu</string>
+    <string name="not_permissioned">Not Permissioned</string>
+    <string name="np">np</string>
+    <string name="invalid">invalid</string>
+    <string name="na">n/a</string>
+
+    <!-- Add Label -->
+    <string name="add_a_label">Add a label</string>
+    <string name="enter_a_label_name_to_add_to_your_symbols_page">Enter a label name to add to your symbols page.</string>
+    <string name="enter_label_name">Enter label name</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_group_dialog_message">Deleting this group deletes all symbols it contains.</string>
+    <string name="label_has_been_added">Label has been added.</string>
+
+    <!-- Add Expression -->
+    <string name="expression">Expression</string>
+    <string name="add_expression">Add an Expression</string>
+    <string name="enter_expression_message">Enter a spread formula to add to your symbols page.</string>
+    <string name="enter_expression_hint">Enter expression value</string>
+    <string name="enter_expression_name_hint">Display Name</string>
+    <string name="expression_has_been_added">Expression has been added.</string>
+
+    <!-- Add Symbols -->
+    <string name="symbol_has_been_added">Symbol has been added.</string>
+    <string name="add_to_group_title">Which group do you want to add %1$s to?</string>
+
+
+    <!-- Edit Quotes -->
+    <string name="edit_groups">Edit Groups</string>
+    <string name="done">Done</string>
+    <string name="quote_has_been_deleted">%1$s has been deleted.</string>
+    <string name="enter_new_group_name">Enter a new name for the group.</string>
+
+    <!-- News Screens -->
+    <string name="recent_news">Recent News</string>
+    <string name="edit_news">Edit News</string>
+    <string name="error_no_news_categories">There are no saved News Categories.</string>
+    <string name="error_no_news_articles">There are no articles.</string>
+    <string name="category_has_been_deleted">Category has been deleted.</string>
+    <string name="news_search_query_or">Match any word (OR)</string>
+    <string name="news_search_query_and">Exact match (AND)</string>
+    <string name="news_search_keywords">Enter Search Keyword(s)</string>
+    <string name="news_search_name">Enter name of News Search</string>
+    <string name="no_connection_on_news">@string/no_network_message</string>
+
+    <!-- Chart -->
+    <string name="bar">Bar</string>
+    <string name="line">Line</string>
+    <string name="candlestick">Candlestick</string>
+    <string name="quote_title_land">%1$s %2$s Last:%3$s</string>
+    <string name="quote_data_land">"C:%1$s(%2$s%%)    O:%3$s    H:%4$s    L:%5$s    V:%6$s"</string>
+    <string name="quote_data_port">"%1$s     L:%2$s     %3$s(%4$s%%)"</string>
+    <string name="quote_data_port_short">"%1$s   L:%2$s   %3$s(%4$s%%)"</string>
+    <string name="open_">Open:</string>
+    <string name="high_">High:</string>
+    <string name="low_">Low:</string>
+    <string name="settle_">Settle:</string>
+    <string name="bid_">Bid:</string>
+    <string name="ask_">Ask:</string>
+    <string name="volume_">Volume:</string>
+    <string name="date_">Date:</string>
+    <string name="min_5">5 min</string>
+    <string name="min_30">30 min</string>
+    <string name="min_60">60 min</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="related_news">Related News</string>
+    <string name="view_all_articles">View all articles</string>
+    <string name="format_chart_data_on_tooltip">La = %1$s\nH = %2$s\nL = %3$s\nO = %4$s\nV = %5$s\nCh = %6$s (%7$s%%)</string>
+    <string name="x_axis_end_reached">You have reached the maximum price history for this device.</string>
+    <string name="no_connection_on_charts">@string/no_network_message</string>
+    <string name="network_timeout_error">Network Error</string>
+    <string name="charts_empty_msg">No Data Available</string>
+    <string name="invalid_chart_request">Unable to load chart data</string>
+
+    <!-- Sync -->
+    <string name="new_google_cloud_data_available_title">New Google Cloud Data Available</string>
+    <string name="new_google_cloud_data_available_msg">Would you like to upload this device\'s data to Google Cloud, or download Google Cloud\'s data to this device?</string>
+    <string name="new_google_cloud_data_available_positive">Upload Device\'s Data</string>
+    <string name="new_google_cloud_data_available_negative">Download Cloud\'s Data</string>
+    <string name="google_sign_in_request">If you have a quote list stored in Google, you may sign in to migrate it to the STOCK cloud.</string>
+    <string name="migrate_google_cloud_quote_list_msg">Please choose which QuoteList you would like to use.  This will become the default QuoteList for your mobile and FinanceX My Favorites Quote List.</string>
+    <string name="use_legacy_quote_list">Use Legacy</string>
+    <string name="use_stock_cloud_quote_list">Use STOCK Cloud</string>
+    <string name="skip_google_sign_in">Skip</string>
+
+    <string name="overwrite_data_title">Overwrite data?</string>
+    <string name="overwrite_data_msg">You are about to overwrite your shared Google Cloud data. Continue?</string>
+    <string name="overwrite_data_positive">Overwrite</string>
+    <string name="google_drive">Google Drive</string>
+    <string name="google_drive_login_msg">Would you like to log into Google Drive to share your settings across Android devices?</string>
+    <string name="use_local_data">Use Local Data</string>
+    <string name="allow_cloud_data">Allow Cloud Data</string>
+
+    <!-- Diagnostics -->
+    <string name="pull_google_drive_quotes">Download Google Drive Quotes</string>
+    <string name="replace_data_message">Do you wish to replace your current data with the following?</string>
+    <string name="pull_google_drive_news">Download Google Drive News Categories</string>
+    <string name="pull_google_drive_news_message">Do you wish to replace your current news categories with the ones stored in Google Drive?</string>
+    <string name="pull_google_drive_is_equal_message">Your google drive data is equal to your current data</string>
+    <string name="google_drive_empty_message">No data found in Google Drive.</string>
+</resources>
